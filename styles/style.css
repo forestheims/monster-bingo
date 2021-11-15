@@ -1,0 +1,31 @@
+/* 
+COLOR PALATE
+
+BLUE
+#006ED0
+#518EFF
+#5DBCD2
+
+PURPLE
+#B48CFC
+
+GREEN
+#5BFC4B
+#9CFC6C */
+
+* {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+button {
+    padding: 10px;
+    background-color: #518EFF;
+    color: white;
+    border-radius: 10px;
+
+}
+
+button:hover {
+    background-color: #006ED0;
+    filter: drop-shadow(5px 5px 5px grey);
+}
