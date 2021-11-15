@@ -17,11 +17,21 @@ GREEN
     font-family: 'Luckiest Guy', cursive;
 }
 
+body {
+    background: linear-gradient(45deg,#B48CFC,#9CFC6C);
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+}
 button {
     padding: 10px;
     background-color: #518EFF;
     color: white;
     border-radius: 10px;
+    margin: 10px;
 
 }
 
@@ -32,23 +42,39 @@ button:hover {
 
 img {
     width: 75px;
+    filter: drop-shadow(5px 5px 5px grey);
+}
+
+.grid-item img{
+filter: grayscale(100%);
+}
+
+.grid-item:hover img{
+    width: 85px;
+    filter: grayscale(0%);
+}
+
+#monster-pick-text {
+    font-size: 25px;
 }
 
 #grid-container {
-    width: 60vw;
-    height: 60vw;
+    width: 600px;
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    border: 2px solid black;
-    gap: 2px;
+    border: 5px solid black;
+    /* border-radius: 10px; */
 }
 
 .grid-item {
-    border: 2px solid black;
+    border: 5px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    background: radial-gradient(closest-side, white, #5ffe517e,#5dbdd280);
 }
+
