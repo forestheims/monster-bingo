@@ -2,8 +2,10 @@ const container = document.getElementById('grid-container');
 
 export function renderMonsters(){
     for (let i = 0; i < 25; i++){
-        const div = document.createElement('div');
-        div.classList.add('grid-item');
+        const label = document.createElement('label');
+        const input = document.createElement('input');
+        input.setAttribute('type', 'checkbox');
+        label.classList.add('grid-item');
 
         const img = document.createElement('img');
         img.src = './assets/beaker.png';
@@ -11,7 +13,7 @@ export function renderMonsters(){
         const span = document.createElement('span');
         span.textContent = 'beaker';
 
-        div.append(img, span);
-        container.append(div);
+        label.append(img, span, input);
+        container.append(label);
     }
 }

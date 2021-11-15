@@ -24,8 +24,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 button {
     padding: 10px;
     background-color: #518EFF;
@@ -45,11 +46,11 @@ img {
     filter: drop-shadow(5px 5px 5px grey);
 }
 
-.grid-item img{
-filter: grayscale(100%);
+.grid-item img {
+    filter: grayscale(100%);
 }
 
-.grid-item:hover img{
+.grid-item:hover img {
     width: 85px;
     filter: grayscale(0%);
 }
