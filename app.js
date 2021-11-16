@@ -26,6 +26,12 @@ newPick.addEventListener('click', ()=>{
     j = j.filter(notPickedYet => monster !== notPickedYet);
     k++;
 
+    monImg.name = monster;
     monImg.src = `./assets/${monster}.png`;
     monTxt.textContent = `${monster} has escaped! capture him on the board.`;
 });
+
+playAgain.addEventListener('click', ()=>{
+    window.location.reload();
+});
+

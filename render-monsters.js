@@ -10,9 +10,20 @@ export function renderMonsters(){
 
         let idImg = `image-${i}`;
         let idSpan = `span-${i}`;
+        let idCbx = `cbx-${i}`;
 
         const img = document.getElementById(idImg);
         const span = document.getElementById(idSpan);
+        const cbx = document.getElementById(idCbx);
+        cbx.name = monster;
+
+        cbx.addEventListener('click', ()=>{
+            let monsterImage = document.getElementById('monster-pick-img');
+
+            if (cbx.name !== monsterImage.name){
+                cbx.checked = false;
+            }            
+        });
 
         img.src = `./assets/${monster}.png`;
         span.textContent = `${monster}`;
