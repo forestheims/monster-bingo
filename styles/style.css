@@ -79,3 +79,10 @@ img {
     background: radial-gradient(closest-side, white, #5ffe517e,#5dbdd280);
 }
 
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked + img {
+    filter: grayscale(0%);
+}
