@@ -1,7 +1,7 @@
 import { renderMonsters } from './render-monsters.js';
 import { randomMonster } from './random-monster.js';
 import { monsters } from './monsters.js';
-import { bingo } from './bingo.js';
+import { bingoCheck } from './bingo.js';
 
 renderMonsters();
 
@@ -38,6 +38,5 @@ playAgain.addEventListener('click', ()=>{
 });
 
 bingoButton.addEventListener('click', () => {
-    bingo();
-    
+    bingoCheck();
 });

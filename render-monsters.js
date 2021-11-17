@@ -20,11 +20,7 @@ export function renderMonsters(){
         cbx.name = monster;
         
         cbx.addEventListener('click', () => {
-            let monsterImage = document.getElementById('monster-pick-img');
-            // if (e.target.checked) {
-                //     // cbx.removeEventListener('click', test, true);
-                //     cbx.checked = true;
-                // } else 
+            let monsterImage = document.getElementById('monster-pick-img'); 
             if (h.includes(cbx.name)) {
                 return;
             } else if (cbx.name !== monsterImage.name){
