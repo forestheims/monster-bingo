@@ -1,7 +1,8 @@
 import { renderMonsters } from './render-monsters.js';
 import { randomMonster } from './random-monster.js';
 import { monsters } from './monsters.js';
-import { bingo } from "./bingo.js";
+import { bingo } from './bingo.js';
+
 renderMonsters();
 
 const newPick = document.getElementById('new-pick');
