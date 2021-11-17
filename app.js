@@ -1,13 +1,14 @@
 import { renderMonsters } from './render-monsters.js';
 import { randomMonster } from './random-monster.js';
 import { monsters } from './monsters.js';
-
+import { bingo } from "./bingo.js";
 renderMonsters();
 
 const newPick = document.getElementById('new-pick');
 const playAgain = document.getElementById('play-again');
 const monImg = document.getElementById('monster-pick-img');
 const monTxt = document.getElementById('monster-pick-text');
+const bingoButton = document.getElementById('bingo');
 
 let j = monsters;
 
@@ -35,3 +36,7 @@ playAgain.addEventListener('click', ()=>{
     window.location.reload();
 });
 
+bingoButton.addEventListener('click', () => {
+    bingo();
+    
+});
