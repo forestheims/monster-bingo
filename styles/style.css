@@ -62,11 +62,14 @@ img {
 #grid-container {
     width: 600px;
     height: 600px;
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    border: 5px solid black;
+    box-shadow: 5px 5px 5px darkgrey;
     /* border-radius: 10px; */
+}
+
+.grid {
+    display: grid;
 }
 
 .grid-item {

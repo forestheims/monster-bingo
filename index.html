@@ -22,11 +22,15 @@
     <header>
         <img id="monster-pick-img" src="./assets/happy.png">
         <span id="monster-pick-text">Happy Welcomes You To The Game!</span>
-        <button id="new-pick">Next Monster</button>
+        <button id="start">Start!</button>
+        <button id="new-pick" class="hidden">Next Monster</button>
         <button class="hidden" id="play-again">Play Again?</button>
     </header>
     <main>
-            <div id="grid-container">
+        <div id="intro">
+            <p>RAWRR! is a game of bingo. Goal: Match the escaped monster to the card.</p>
+        </div>
+            <div id="grid-container" class="hidden grid">
                 <label class="grid-item"><input id="cbx-1" type="checkbox" class="col-1 row-1 dia-1"><img src="" id="image-1"/><span id="span-1"></span></label>
                 <label class="grid-item"><input id="cbx-2" type="checkbox" class="col-2 row-1"><img src="" id="image-2"/><span id="span-2"></span></label>
                 <label class="grid-item"><input id="cbx-3" type="checkbox" class="col-3 row-1"><img src="" id="image-3"/><span id="span-3"></span></label>
@@ -57,7 +61,7 @@
                 <label class="grid-item"><input id="cbx-23" type="checkbox" class="col-4 row-5"><img src="" id="image-23"/><span id="span-23"></span></label>
                 <label class="grid-item"><input id="cbx-24" type="checkbox" class="col-5 row-5 dia-1"><img src="" id="image-24"/><span id="span-24"></span></label>
             </div>
-        <button id="bingo">Rawwr!</button>
+        <button id="bingo" class="hidden">Rawwr!</button>
     </main>
         <script id="cbx-1" type="module" src="./app.js"></script>
 </body>
