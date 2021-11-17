@@ -46,6 +46,11 @@ img {
     filter: drop-shadow(5px 5px 5px grey);
 }
 
+hr {
+    background-color: #518EFF;
+    height: 5px;
+}
+
 .grid-item img {
     filter: grayscale(100%);
 }
@@ -55,8 +60,55 @@ img {
     filter: grayscale(0%);
 }
 
+#intro {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.flying-monsters {
+    animation-name: flying;
+    animation-duration: 5.0s;
+    animation-timing-function: ease-out;
+    position: relative;
+}
+
+@keyframes flying {
+    0% {left: -110%; top: 0px;}
+    10% {left: -90%; top: 20px;}
+    20% {left: -70%; top: 0px;}
+    30% {left: -50%; top: 20px;}
+    40% {left: -30%; top: 0px;}
+    50% {left: 0%; top: 20px;}
+    60% {left: 30%; top: 0px;}
+    70% {left: 50%; top: 20px;}
+    80% {left: 70%; top: 0px;}
+    90% {left: 90%; top: 20px;}
+    100% {left: 110%; top: 0px;}
+}
+
 #monster-pick-text {
     font-size: 25px;
+}
+
+#monster-pick-img {
+    animation-name: resize;
+    animation-iteration-count: infinite;
+    animation-duration: 2.0s;
+    margin: 20px;
+}
+
+@keyframes resize {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
 }
 
 #grid-container {

@@ -13,18 +13,26 @@ const bingoButton = document.getElementById('bingo');
 const startButton = document.getElementById('start');
 const intro = document.getElementById('intro');
 const gridContainer = document.getElementById('grid-container');
+const flyingMonster = document.getElementById('flying-monster');
 
 let j = monsters;
 
 let k = 1;
-
-startButton.addEventListener('click', () => {
+function hideUnhide() {
     newPick.classList.remove('hidden');
     gridContainer.classList.remove('hidden');
     bingoButton.classList.remove('hidden');
     startButton.classList.add('hidden');
     intro.classList.add('hidden');
     displayMonster();
+}
+
+startButton.addEventListener('click', () => {
+    flyingMonster.classList.remove('hidden');
+    flyingMonster.classList.add('flying-monsters');
+    // wait to do everything below this line for 8secs
+    setTimeout(hideUnhide, 5000);
+
 });
 
 function displayMonster() {
