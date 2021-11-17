@@ -86,3 +86,7 @@ input[type=checkbox] {
 input[type=checkbox]:checked + img {
     filter: grayscale(0%);
 }
+
+.hidden {
+    display: none;
+}

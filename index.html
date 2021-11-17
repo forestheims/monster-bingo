@@ -23,43 +23,43 @@
         <img id="monster-pick-img" src="./assets/happy.png">
         <span id="monster-pick-text">Happy Welcomes You To The Game!</span>
         <button id="new-pick">Next Monster</button>
+        <button class="hidden" id="play-again">Play Again?</button>
     </header>
     <main>
             <div id="grid-container">
-                <label class="grid-item"><input type="checkbox" class="col-1 row-1 dia-1"><img src="./assets/beaker.png" id="image-1"/><span id="span-1">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-2 row-1"><img src="./assets/beaker.png" id="image-2"/><span id="span-2">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-3 row-1"><img src="./assets/beaker.png" id="image-3"/><span id="span-3">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-4 row-1"><img src="./assets/beaker.png" id="image-4"/><span id="span-4">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-5 row-1 dia-2"><img src="./assets/beaker.png" id="image-5"/><span id="span-5">Beaker</span></label>
+                <label class="grid-item"><input id="cbx-1" type="checkbox" class="col-1 row-1 dia-1"><img src="" id="image-1"/><span id="span-1"></span></label>
+                <label class="grid-item"><input id="cbx-2" type="checkbox" class="col-2 row-1"><img src="" id="image-2"/><span id="span-2"></span></label>
+                <label class="grid-item"><input id="cbx-3" type="checkbox" class="col-3 row-1"><img src="" id="image-3"/><span id="span-3"></span></label>
+                <label class="grid-item"><input id="cbx-4" type="checkbox" class="col-4 row-1"><img src="" id="image-4"/><span id="span-4"></span></label>
+                <label class="grid-item"><input id="cbx-5" type="checkbox" class="col-5 row-1 dia-2"><img src="" id="image-5"/><span id="span-5"></span></label>
 
-                <label class="grid-item"><input type="checkbox" class="col-1 row-2"><img src="./assets/beaker.png" id="image-6"/><span id="span-6">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-2 row-2 dia-1"><img src="./assets/beaker.png" id="image-7"/><span id="span-7">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-3 row-2"><img src="./assets/beaker.png" id="image-8"/><span id="span-8">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-4 row-2 dia-2"><img src="./assets/beaker.png" id="image-9"/><span id="span-9">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-5 row-2"><img src="./assets/beaker.png" id="image-10"/><span id="span-10">Beaker</span></label>
+                <label class="grid-item"><input id="cbx-6" type="checkbox" class="col-1 row-2"><img src="" id="image-6"/><span id="span-6"></span></label>
+                <label class="grid-item"><input id="cbx-7" type="checkbox" class="col-2 row-2 dia-1"><img src="" id="image-7"/><span id="span-7"></span></label>
+                <label class="grid-item"><input id="cbx-8" type="checkbox" class="col-3 row-2"><img src="" id="image-8"/><span id="span-8"></span></label>
+                <label class="grid-item"><input id="cbx-9" type="checkbox" class="col-4 row-2 dia-2"><img src="" id="image-9"/><span id="span-9"></span></label>
+                <label class="grid-item"><input id="cbx-10" type="checkbox" class="col-5 row-2"><img src="" id="image-10"/><span id="span-10"></span></label>
                 
-                <label class="grid-item"><input type="checkbox" class="col-1 row-3"><img src="./assets/beaker.png" id="image-11"/><span id="span-11">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-2 row-3"><img src="./assets/beaker.png" id="image-12"/><span id="span-12">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-3 row-3 dia-1 dia-2" checked><img src="./assets/beaker.png"/><span>Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-4 row-3"><img src="./assets/beaker.png" id="image-13"/><span id="span-13">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-5 row-3"><img src="./assets/beaker.png" id="image-14"/><span id="span-14">Beaker</span></label>
+                <label class="grid-item"><input id="cbx-11" type="checkbox" class="col-1 row-3"><img src="" id="image-11"/><span id="span-11"></span></label>
+                <label class="grid-item"><input id="cbx-12" type="checkbox" class="col-2 row-3"><img src="" id="image-12"/><span id="span-12"></span></label>
+                <label class="grid-item"><input onclick="return false;" type="checkbox" class="col-3 row-3 dia-1 dia-2" checked><img src="./assets/socks.png"/><span>Free</span></label>
+                <label class="grid-item"><input id="cbx-13" type="checkbox" class="col-4 row-3"><img src="" id="image-13"/><span id="span-13"></span></label>
+                <label class="grid-item"><input id="cbx-14" type="checkbox" class="col-5 row-3"><img src="" id="image-14"/><span id="span-14"></span></label>
                 
-                <label class="grid-item"><input type="checkbox" class="col-1 row-4"><img src="./assets/beaker.png" id="image-15"/><span id="span-15">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-2 row-4 dia-2"><img src="./assets/beaker.png" id="image-16"/><span id="span-16">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-3 row-4"><img src="./assets/beaker.png" id="image-17"/><span id="span-17">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-4 row-4 dia-1"><img src="./assets/beaker.png" id="image-18"/><span id="span-18">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-5 row-4"><img src="./assets/beaker.png" id="image-19"/><span id="span-19">Beaker</span></label>
+                <label class="grid-item"><input id="cbx-15" type="checkbox" class="col-1 row-4"><img src="" id="image-15"/><span id="span-15"></span></label>
+                <label class="grid-item"><input id="cbx-16" type="checkbox" class="col-2 row-4 dia-2"><img src="" id="image-16"/><span id="span-16"></span></label>
+                <label class="grid-item"><input id="cbx-17" type="checkbox" class="col-3 row-4"><img src="" id="image-17"/><span id="span-17"></span></label>
+                <label class="grid-item"><input id="cbx-18" type="checkbox" class="col-4 row-4 dia-1"><img src="" id="image-18"/><span id="span-18"></span></label>
+                <label class="grid-item"><input id="cbx-19" type="checkbox" class="col-5 row-4"><img src="" id="image-19"/><span id="span-19"></span></label>
 
-                <label class="grid-item"><input type="checkbox" class="col-1 row-5 dia-2"><img src="./assets/beaker.png" id="image-20"/><span id="span-20">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-2 row-5"><img src="./assets/beaker.png" id="image-21"/><span id="span-21">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-3 row-5"><img src="./assets/beaker.png" id="image-22"/><span id="span-22">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-4 row-5"><img src="./assets/beaker.png" id="image-23"/><span id="span-23">Beaker</span></label>
-                <label class="grid-item"><input type="checkbox" class="col-5 row-5 dia-1"><img src="./assets/beaker.png" id="image-24"/><span id="span-24">Beaker</span></label>
+                <label class="grid-item"><input id="cbx-20" type="checkbox" class="col-1 row-5 dia-2"><img src="" id="image-20"/><span id="span-20"></span></label>
+                <label class="grid-item"><input id="cbx-21" type="checkbox" class="col-2 row-5"><img src="" id="image-21"/><span id="span-21"></span></label>
+                <label class="grid-item"><input id="cbx-22" type="checkbox" class="col-3 row-5"><img src="" id="image-22"/><span id="span-22"></span></label>
+                <label class="grid-item"><input id="cbx-23" type="checkbox" class="col-4 row-5"><img src="" id="image-23"/><span id="span-23"></span></label>
+                <label class="grid-item"><input id="cbx-24" type="checkbox" class="col-5 row-5 dia-1"><img src="" id="image-24"/><span id="span-24"></span></label>
             </div>
         <button id="bingo">Rawwr!</button>
     </main>
-
-        <script type="module" src="./app.js"></script>
+        <script id="cbx-1" type="module" src="./app.js"></script>
 </body>
 
 </html>
