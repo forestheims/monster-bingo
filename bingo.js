@@ -12,20 +12,24 @@ export function bingoCheck(){
     
     for (let line of bingoLines) {
         let bingoLine = document.querySelectorAll(line);
-        console.log(bingoLine);
-        
+        let uncheckedArray = [];
+
         for (let element of bingoLine) {
-            console.log(element.checked);
-            if (bingo === true){
-                span.textContent = 'You Win. Congrats!';
-                return;
-            } else if (!element.checked) {
+            if (!element.checked) {
                 bingo = false;
-                span.textContent = `Sorry, that's not a RAWRR!`;
-            } else {
+                uncheckedArray.push('unchecked');
+            } else if (uncheckedArray.length === 0){
                 bingo = true;
-            }
+                break;
+            } 
         }
+        
+        if (bingo === true){
+            span.textContent = 'You Win. Congrats!';
+        } else {
+            span.textContent = `Sorry, that's not a RAWRR!`;
+        }
+        
     } 
 }
 
