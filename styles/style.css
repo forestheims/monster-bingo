@@ -1,18 +1,3 @@
-/* 
-COLOR PALATE
-
-BLUE
-#006ED0
-#518EFF
-#5DBCD2
-
-PURPLE
-#B48CFC
-
-GREEN
-#5BFC4B
-#9CFC6C */
-
 * {
     font-family: 'Luckiest Guy', cursive;
     color: rgba(10, 10, 10, 0.9);
@@ -39,7 +24,6 @@ button {
     color: white;
     border-radius: 10px;
     margin: 10px;
-
 }
 
 .bingo-button {
@@ -61,15 +45,6 @@ hr {
     height: 5px;
 }
 
-.grid-item img {
-    filter: grayscale(100%);
-}
-
-.grid-item:hover img {
-    width: 85px;
-    filter: grayscale(0%);
-}
-
 #intro {
     font-size: 20px;
     line-height: 1.5;
@@ -81,102 +56,8 @@ hr {
     flex-direction: column;
 }
 
-.flying-monsters {
-    animation-name: flying;
-    animation-duration: 5.0s;
-    animation-timing-function: ease-in-out;
-    position: relative;
-}
-
-@keyframes flying {
-    0% {left: -110%; top: 0px;}
-    10% {left: -90%; top: 20px;}
-    20% {top: 0px;}
-    30% {left: -50%; top: 20px;}
-    40% {top: 0px;}
-    50% {left: 0%; top: 20px;}
-    60% {top: 0px;}
-    70% {left: 50%; top: 20px;}
-    80% {top: 0px;}
-    90% {left: 90%; top: 20px;}
-    100% {left: 150%; top: 0px;}
-}
-
-.tipsy-monsters {
-    animation-name: tumbling;
-    animation-duration: 5.0s;
-    animation-timing-function: linear;
-    position: relative;
-}
-
-@keyframes tumbling {
-    0% {left: 150%; top: 0px;}
-    10% {left: 90%; top: 20px;}
-    20% {top: 0px;}
-    30% {left: 50%; top: 20px;}
-    40% {top: 0px;}
-    50% {left: 0%; top: 20px; transform: rotate(360deg);}
-    60% {top: 0px;}
-    70% {left: -50%; top: 20px;}
-    80% {top: 0px;}
-    90% {left: -90%; top: 20px;}
-    100% {left: -110%; top: 0px;}
-}
-
 #monster-pick-text {
     font-size: 25px;
-}
-
-#monster-pick-img {
-    animation-name: resize;
-    animation-iteration-count: infinite;
-    animation-duration: 2.0s;
-    margin: 20px;
-}
-
-@keyframes resize {
-    0% {
-        transform: scale(1.0);
-    }
-
-    50% {
-        transform: scale(1.3);
-    }
-
-    100% {
-        transform: scale(1.0);
-    }
-}
-
-#grid-container {
-    width: 600px;
-    height: 600px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    box-shadow: 8px 8px 8px rgb(92, 92, 92);
-    /* border-radius: 10px; */
-}
-
-.grid {
-    display: grid;
-}
-
-.grid-item {
-    border: 5px solid #7154b1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    background: radial-gradient(closest-side, white, #5ffe517e,#5dbdd280);
-}
-
-input[type=checkbox] {
-    display: none;
-}
-
-input[type=checkbox]:checked + img {
-    filter: grayscale(0%);
 }
 
 .hidden {
