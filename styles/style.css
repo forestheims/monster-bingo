@@ -15,6 +15,12 @@ GREEN
 
 * {
     font-family: 'Luckiest Guy', cursive;
+    color: rgba(10, 10, 10, 0.9);
+}
+
+header {
+    display: flex;
+    align-items: center;
 }
 
 body {
@@ -36,6 +42,10 @@ button {
 
 }
 
+.bingo-button {
+    margin-top: 30px;
+}
+
 button:hover {
     background-color: #006ED0;
     filter: drop-shadow(5px 5px 5px grey);
@@ -44,6 +54,11 @@ button:hover {
 img {
     width: 75px;
     filter: drop-shadow(5px 5px 5px grey);
+}
+
+hr {
+    background-color: #518EFF;
+    height: 5px;
 }
 
 .grid-item img {
@@ -55,22 +70,99 @@ img {
     filter: grayscale(0%);
 }
 
+#intro {
+    font-size: 20px;
+    line-height: 1.5;
+    gap: 20px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.flying-monsters {
+    animation-name: flying;
+    animation-duration: 5.0s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes flying {
+    0% {left: -110%; top: 0px;}
+    10% {left: -90%; top: 20px;}
+    20% {top: 0px;}
+    30% {left: -50%; top: 20px;}
+    40% {top: 0px;}
+    50% {left: 0%; top: 20px;}
+    60% {top: 0px;}
+    70% {left: 50%; top: 20px;}
+    80% {top: 0px;}
+    90% {left: 90%; top: 20px;}
+    100% {left: 150%; top: 0px;}
+}
+
+.tipsy-monsters {
+    animation-name: tumbling;
+    animation-duration: 5.0s;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+@keyframes tumbling {
+    0% {left: 150%; top: 0px;}
+    10% {left: 90%; top: 20px;}
+    20% {top: 0px;}
+    30% {left: 50%; top: 20px;}
+    40% {top: 0px;}
+    50% {left: 0%; top: 20px; transform: rotate(360deg);}
+    60% {top: 0px;}
+    70% {left: -50%; top: 20px;}
+    80% {top: 0px;}
+    90% {left: -90%; top: 20px;}
+    100% {left: -110%; top: 0px;}
+}
+
 #monster-pick-text {
     font-size: 25px;
+}
+
+#monster-pick-img {
+    animation-name: resize;
+    animation-iteration-count: infinite;
+    animation-duration: 2.0s;
+    margin: 20px;
+}
+
+@keyframes resize {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
 }
 
 #grid-container {
     width: 600px;
     height: 600px;
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    border: 5px solid black;
+    box-shadow: 8px 8px 8px rgb(92, 92, 92);
     /* border-radius: 10px; */
 }
 
+.grid {
+    display: grid;
+}
+
 .grid-item {
-    border: 5px solid black;
+    border: 5px solid #7154b1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,4 +181,9 @@ input[type=checkbox]:checked + img {
 
 .hidden {
     display: none;
+}
+
+.smaller {
+    width: 30px;
+    margin: 10px;
 }

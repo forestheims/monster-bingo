@@ -1,36 +1,45 @@
-import { renderMonsters } from './render-monsters.js';
-import { randomMonster } from './random-monster.js';
-import { monsters } from './monsters.js';
-import { bingoCheck } from './bingo.js';
+import { renderMonsters } from './src/render-monsters.js';
+import { bingoCheck } from './src/bingo.js';
+import { displayMonster } from './src/display-monster.js';
 
 renderMonsters();
 
 const newPick = document.getElementById('new-pick');
 const playAgain = document.getElementById('play-again');
-const monImg = document.getElementById('monster-pick-img');
-const monTxt = document.getElementById('monster-pick-text');
 const bingoButton = document.getElementById('bingo');
+const startButton = document.getElementById('start');
+const intro = document.getElementById('intro');
+const gridContainer = document.getElementById('grid-container');
+const flyingMonster = document.getElementById('flying-monster');
+const tipsyMonster = document.getElementById('tipsy-monster');
+// const pickedLast = document.getElementById('picked-last');
+// const pickedNextLast = document.getElementById('picked-next-last');
+// const pickedLastLast = document.getElementById('picked-last-last');
 
-let j = monsters;
+function hideUnhide() {
+    newPick.classList.remove('hidden');
+    gridContainer.classList.remove('hidden');
+    bingoButton.classList.remove('hidden');
 
-let k = 1;
+    startButton.classList.add('hidden');
+    intro.classList.add('hidden');
+
+    displayMonster();
+}
+
+startButton.addEventListener('click', () => {
+    flyingMonster.classList.remove('hidden');
+    flyingMonster.classList.add('flying-monsters');
+
+    tipsyMonster.classList.remove('hidden');
+    tipsyMonster.classList.add('tipsy-monsters');
+
+    setTimeout(hideUnhide, 5000);
+
+});
 
 newPick.addEventListener('click', ()=>{
-    if (k === 24){
-        monTxt.textContent = 'Game Over!';
-        monImg.src = './assets/sock.png';
-        playAgain.classList.remove('hidden');
-        newPick.classList.add('hidden');
-        return;
-    } 
-
-    let monster = randomMonster(j);
-    j = j.filter(notPickedYet => monster !== notPickedYet);
-    k++;
-
-    monImg.name = monster;
-    monImg.src = `./assets/${monster}.png`;
-    monTxt.textContent = `${monster} has escaped! capture him on the board.`;
+    displayMonster();
 });
 
 playAgain.addEventListener('click', ()=>{
