@@ -1,1 +1,38 @@
-/* add home page styles here */
+#grid-container {
+    width: 600px;
+    height: 600px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    box-shadow: 8px 8px 8px rgb(92, 92, 92);
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-item {
+    border: 5px solid #7154b1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: radial-gradient(closest-side, white, #5ffe517e,#5dbdd280);
+}
+
+.grid-item img {
+    filter: grayscale(100%);
+}
+
+.grid-item:hover img {
+    width: 85px;
+    filter: grayscale(0%);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked + img {
+    filter: grayscale(0%);
+}
