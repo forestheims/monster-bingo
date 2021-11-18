@@ -26,10 +26,10 @@
     40% {top: 0px;}
     50% {left: 0%; top: 20px;}
     60% {top: 0px;}
-    70% {left: 50%; top: 20px;}
+    70% {left: 75%; top: 20px;}
     80% {top: 0px;}
-    90% {left: 90%; top: 20px;}
-    100% {left: 150%; top: 0px;}
+    90% {left: 125%; top: 20px;}
+    100% {left: 200%; top: 0px;}
 }
 
 .tipsy-monsters {
@@ -40,10 +40,10 @@
 }
 
 @keyframes tumbling {
-    0% {left: 150%; top: 0px;}
-    10% {left: 90%; top: 20px;}
+    0% {left: 200%; top: 0px;}
+    10% {left: 125%; top: 20px;}
     20% {top: 0px;}
-    30% {left: 50%; top: 20px;}
+    30% {left: 75%; top: 20px;}
     40% {top: 0px;}
     50% {left: 0%; top: 20px; transform: rotate(360deg);}
     60% {top: 0px;}

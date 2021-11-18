@@ -8,6 +8,7 @@ const newPick = document.getElementById('new-pick');
 const playAgain = document.getElementById('play-again');
 const bingoButton = document.getElementById('bingo');
 const startButton = document.getElementById('start');
+
 const intro = document.getElementById('intro');
 const gridContainer = document.getElementById('grid-container');
 const flyingMonster = document.getElementById('flying-monster');
@@ -42,6 +43,12 @@ newPick.addEventListener('click', ()=>{
 
 playAgain.addEventListener('click', ()=>{
     window.location.reload();
+
+    //re -render monsters, creating anew bingo card
+    //import h, and re-set it to an empty array
+    //let = gamesWon
+    //if bingo = true, gamesWom++
+
 });
 
 bingoButton.addEventListener('click', () => {

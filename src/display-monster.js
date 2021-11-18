@@ -19,8 +19,8 @@ export let h = [];
 let y = [];
 
 export function displayMonster() {
-    if (k === 24){
-        monTxt.textContent = 'Game Over!';
+    if (k === 25){
+        monTxt.textContent = 'Game Over! No more Monsters.';
         monImg.src = './assets/sock.png';
         playAgain.classList.remove('hidden');
         newPick.classList.add('hidden');
