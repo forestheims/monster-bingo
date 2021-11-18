@@ -12,9 +12,7 @@ const intro = document.getElementById('intro');
 const gridContainer = document.getElementById('grid-container');
 const flyingMonster = document.getElementById('flying-monster');
 const tipsyMonster = document.getElementById('tipsy-monster');
-// const pickedLast = document.getElementById('picked-last');
-// const pickedNextLast = document.getElementById('picked-next-last');
-// const pickedLastLast = document.getElementById('picked-last-last');
+
 
 function hideUnhide() {
     newPick.classList.remove('hidden');
@@ -48,4 +46,5 @@ playAgain.addEventListener('click', ()=>{
 
 bingoButton.addEventListener('click', () => {
     bingoCheck();
+   
 });

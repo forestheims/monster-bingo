@@ -14,6 +14,8 @@ let j = monsters;
 
 let k = 1;
 
+export let h = [];
+
 let y = [];
 
 export function displayMonster() {
@@ -29,12 +31,12 @@ export function displayMonster() {
     j = j.filter(notPickedYet => monster !== notPickedYet);
     k++;
 
+    h.push(monster);
+
     y.push(monster);
     if (y.length > 4) {
         y.shift();
     }
-
-    console.log(y);
 
     monImg.name = monster;
     monImg.src = `./assets/${monster}.png`;

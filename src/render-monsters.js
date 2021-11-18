@@ -1,8 +1,8 @@
 import { randomMonster } from './random-monster.js';
 import { monsters } from './monsters.js';
+import { h } from './display-monster.js';
 
 let j = monsters;
-let h = [];
 
 export function renderMonsters(){
     for (let i = 1; i < 25; i++){
@@ -25,9 +25,7 @@ export function renderMonsters(){
                 return;
             } else if (cbx.name !== monsterImage.name){
                 cbx.checked = false;
-            } else {
-                h.push(monster);
-            }
+            } 
         });
 
         img.src = `./assets/${monster}.png`;
