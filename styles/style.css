@@ -15,6 +15,12 @@ GREEN
 
 * {
     font-family: 'Luckiest Guy', cursive;
+    color: rgba(10, 10, 10, 0.9);
+}
+
+header {
+    display: flex;
+    align-items: center;
 }
 
 body {
@@ -34,6 +40,10 @@ button {
     border-radius: 10px;
     margin: 10px;
 
+}
+
+.bingo-button {
+    margin-top: 30px;
 }
 
 button:hover {
@@ -63,27 +73,54 @@ hr {
 #intro {
     font-size: 20px;
     line-height: 1.5;
+    gap: 20px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
 }
 
 .flying-monsters {
     animation-name: flying;
     animation-duration: 5.0s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
     position: relative;
 }
 
 @keyframes flying {
     0% {left: -110%; top: 0px;}
     10% {left: -90%; top: 20px;}
-    20% {left: -70%; top: 0px;}
+    20% {top: 0px;}
     30% {left: -50%; top: 20px;}
-    40% {left: -30%; top: 0px;}
+    40% {top: 0px;}
     50% {left: 0%; top: 20px;}
-    60% {left: 30%; top: 0px;}
+    60% {top: 0px;}
     70% {left: 50%; top: 20px;}
-    80% {left: 70%; top: 0px;}
+    80% {top: 0px;}
     90% {left: 90%; top: 20px;}
-    100% {left: 110%; top: 0px;}
+    100% {left: 150%; top: 0px;}
+}
+
+.tipsy-monsters {
+    animation-name: tumbling;
+    animation-duration: 5.0s;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+@keyframes tumbling {
+    0% {left: 150%; top: 0px;}
+    10% {left: 90%; top: 20px;}
+    20% {top: 0px;}
+    30% {left: 50%; top: 20px;}
+    40% {top: 0px;}
+    50% {left: 0%; top: 20px; transform: rotate(360deg);}
+    60% {top: 0px;}
+    70% {left: -50%; top: 20px;}
+    80% {top: 0px;}
+    90% {left: -90%; top: 20px;}
+    100% {left: -110%; top: 0px;}
 }
 
 #monster-pick-text {
@@ -116,7 +153,7 @@ hr {
     height: 600px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    box-shadow: 5px 5px 5px darkgrey;
+    box-shadow: 8px 8px 8px rgb(92, 92, 92);
     /* border-radius: 10px; */
 }
 
@@ -125,7 +162,7 @@ hr {
 }
 
 .grid-item {
-    border: 5px solid black;
+    border: 5px solid #7154b1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,4 +181,9 @@ input[type=checkbox]:checked + img {
 
 .hidden {
     display: none;
+}
+
+.smaller {
+    width: 30px;
+    margin: 10px;
 }
