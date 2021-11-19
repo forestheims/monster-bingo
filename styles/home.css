@@ -1,6 +1,8 @@
 #grid-container {
     width: 600px;
     height: 600px;
+    border: 5px solid #7154b1;
+    grid-gap: 5px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     box-shadow: 8px 8px 8px rgb(92, 92, 92);
@@ -8,16 +10,16 @@
 
 .grid {
     display: grid;
+    background-color: #7154b1;
 }
 
 .grid-item {
-    border: 5px solid #7154b1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    background: radial-gradient(closest-side, white, #5ffe517e,#5dbdd280);
+    background: radial-gradient(closest-side, white, #54da48,#51a0b1);
 }
 
 .grid-item img {
