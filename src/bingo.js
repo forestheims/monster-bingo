@@ -1,5 +1,7 @@
 let span = document.querySelector('#monster-pick-text');
 
+const playAgain = document.getElementById('play-again');
+const newPick = document.getElementById('new-pick');
 
 export function bingoCheck(){
     let bingoLines = ['.row-1', '.row-2', '.row-3', '.row-4', '.row-5', '.col-1', '.col-2', '.col-3', '.col-4', '.col-5', '.dia-1', '.dia-2'];
@@ -22,6 +24,8 @@ export function bingoCheck(){
 
     if (bingoBooleans.includes(true)){
         span.textContent = 'You Win. Congrats!';
+        newPick.classList.add('hidden');
+        playAgain.classList.remove('hidden');
         bingoBooleans = [];
         return;
     } else {
